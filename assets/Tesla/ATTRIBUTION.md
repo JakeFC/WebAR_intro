@@ -1,0 +1,1 @@
+This work is based on "Tesla's Cyber Truck low poly" (https://sketchfab.com/3d-models/teslas-cyber-truck-low-poly-d577ffc486f447bab41380a57caa7435) by SnakeDiv30 (https://sketchfab.com/SnakeDiv30) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
