@@ -30,6 +30,9 @@ async function activateXR() {
   directionalLight.position.set(10, 15, 10);
   scene.add(directionalLight);
 
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+  scene.add(ambientLight);
+
   // Set up the WebGLRenderer, which handles rendering to the session's base layer.
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -71,6 +74,8 @@ async function activateXR() {
   let duck;
   loader.load("assets/Duck/scene.gltf", function(gltf) {
     duck = gltf.scene;
+	// Shrinking the duck by halving all dimensions.
+	duck.scale.x = duck.scale.y = duck.scale.z = 0.5;
   });
 
   session.addEventListener("select", (event) => {
