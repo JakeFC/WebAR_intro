@@ -68,14 +68,14 @@ async function activateXR() {
     scene.add(reticle);
   })
   
-  let truck;
-  loader.load("assets/Tesla/truck.glb", function(gltf) {
-    truck = gltf.scene;
+  let footman;
+  loader.load("assets/Warcraft3_footman/source/Footman_RIG.glb", function(gltf) {
+    footman = gltf.scene;
   });
 
   session.addEventListener("select", (event) => {
-    if (truck) {
-      const clone = truck.clone();
+    if (footman) {
+      const clone = footman.clone();
       clone.position.copy(reticle.position);
       scene.add(clone);
     }
