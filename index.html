@@ -75,7 +75,7 @@ async function activateXR() {
   loader.load("assets/Duck/scene.gltf", function(gltf) {
     duck = gltf.scene;
 	// Shrinking the duck by halving all dimensions.
-	duck.scale.x = duck.scale.y = duck.scale.z = 0.5;
+	duck.scale.x = duck.scale.y = duck.scale.z = 0.25;
   });
 
   session.addEventListener("select", (event) => {
