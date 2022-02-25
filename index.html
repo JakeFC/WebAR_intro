@@ -60,10 +60,7 @@ async function activateXR() {
   // Perform hit testing using the viewer as origin.
   const hitTestSource = await session.requestHitTestSource({ space: viewerSpace });
 
-  import { GLTFLoader } from 'https://github.com/mrdoob/three.js/blob/dev/examples/jsm/loaders/GLTFLoader.js'
-
-  // const loader = new THREE.GLTFLoader();
-  const loader = new GLTFLoader();
+  const loader = new THREE.GLTFLoader();
   let reticle;
   loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", function(gltf) {
     reticle = gltf.scene;
